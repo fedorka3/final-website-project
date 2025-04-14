@@ -50,20 +50,21 @@ nav .content {
     width: 800px;
     height: 5vh;
     display: inline-flex;
+    
 }
 
 #search-bar input {
     flex-grow: 1;
     padding: 10px;
     outline: none;
+    border: none;
     border-radius: 5px 0 0 5px;
-    border: 2px solid var(--main-color);
     background-color: white;
     font-size: 16px;
 }
 
 #search-bar button {
-    width: 40px;
+    width: 50px;
     background-color: var(--main-color);
     outline: none;
     border: none;
@@ -74,19 +75,22 @@ nav .content {
     cursor: pointer;
     user-select: none;
     font-size: 18px;
-    transition: 0.3s ease-in;
+    transition: 0.3s ease-out;
     color: white;
+    
 }
 
 #search-bar button:hover {
-    color: black;
+    background-color: rgb(64, 0, 182);;
 }
 
 nav ul {
     list-style-type: none;
     display: flex;
     align-items: center;
-    gap: 40px;
+    justify-content: space-around;
+    text-align: center;
+    gap: 25px;
     margin: 0;
     padding: 0;
     font-size: 16px;
@@ -98,15 +102,20 @@ nav ul a {
    /* border-radius: 5px 5px 0 0; */
     cursor: pointer;
     transition: 0.2s ease-in;
+    border-radius: 5px;
 }
 
 nav ul a:hover {
+    background-color: white;
+    color: black;
+}
+
+.active {
     background-color: var(--main-color);
-    border-bottom: 3px solid white;
 }
 
 #cart-text {
-  margin-right: 20px;
+  margin-left: 10px;
 }
 
 main {
@@ -114,18 +123,24 @@ main {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    background-color: wheat;
+    height: 100vh;
 }
 
-main #featured-products-headline {
-    text-align: center;
+#hero {
     margin-top: 15vh;
 }
 
-main #featured-products-headline h1 {
+#hero #featured-products-headline {
+    text-align: center;
+
+}
+
+#hero #featured-products-headline h1 {
     margin-bottom: -5px;
 }
 
-main #featured-products-headline h3 {
+#hero #featured-products-headline h3 {
     font-weight: 400;
 }
 
