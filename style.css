@@ -6,6 +6,7 @@ html {
 
 :root {
     --main-color: rgb(73, 0, 209);
+    --main-hover: rgb(64, 0, 182);
     --accent-color: rgb(255, 187, 0);
 }
 
@@ -13,6 +14,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: rgb(255, 255, 255);
 }
 
 nav {
@@ -37,13 +39,13 @@ nav .content {
 
 #logo h2 {
     font-size: 28px;
-    font-weight: 600;
+    font-weight: 700;
     cursor: pointer;
     transition: 0.2s ease-in;
 }
 
 #logo h2:hover {
-    color: var(--main-color)
+    color: var(--accent-color);
 }
 
 #search-bar {
@@ -81,7 +83,8 @@ nav .content {
 }
 
 #search-bar button:hover {
-    background-color: rgb(64, 0, 182);;
+    background-color: var(--accent-color);
+    color: black;
 }
 
 nav ul {
@@ -98,7 +101,7 @@ nav ul {
 }
 
 nav ul a {
-   padding: 15px 25px;
+   padding: 12px 20px;
    /* border-radius: 5px 5px 0 0; */
     cursor: pointer;
     transition: 0.2s ease-in;
@@ -119,28 +122,62 @@ nav ul a:hover {
 }
 
 main {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    background-color: wheat;
+    margin: 14vh 20vw;
     height: 100vh;
 }
 
-#hero {
-    margin-top: 15vh;
+.hero {
+    background-image: linear-gradient(to bottom right, rgb(240, 240, 240),  white); 
+    /* background-color: rgb(238, 238, 238); */
+    width: 100%;
+    height: 40vh;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-#hero #featured-products-headline {
-    text-align: center;
+.hero .images {
+    display: flex;
+    margin-right: 50px;
+}
+
+.hero img {
+    width: 250px;
+}
+
+
+.hero .description {
+    margin-left: 50px;
+   width: 100%;
+}
+
+
+.description h1 {
+    font-size: 30px;
+    color: rgb(0, 0, 0);
 
 }
 
-#hero #featured-products-headline h1 {
-    margin-bottom: -5px;
+.description h2 {
+    color: rgb(0, 0, 0);
+    font-size: 32px;
 }
 
-#hero #featured-products-headline h3 {
-    font-weight: 400;
+.description button {
+    padding: 15px 20px;
+    font-size: 15px;
+    font-weight: 600;
+    border: none;
+    border-radius: 50px;
+    background-color: var(--main-color);
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease;
 }
 
+.description button:hover {
+    background-color: var(--accent-color);
+    color: black;
+}
