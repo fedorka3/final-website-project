@@ -5,14 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Pinnacle.</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/pages/style.css">
+    <link rel="stylesheet" href="css/nav.css">
     <script src="https://kit.fontawesome.com/22800ee730.js" crossorigin="anonymous"></script>
   </head>
   <body>
 
     <nav id="navbar">
 
-      <div class="content">
+      <button id="hamburger">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <div class="navbar-content">
         <div id="logo">
           <h2>Pinnacle.</h2>
         </div>
@@ -24,31 +29,40 @@
             </button>
         </form>
 
-        <ul>
-          <li><a class="active">Home</a></li>
-          <li><a>Products</a></li>
-          <li><a>Login</a></li>
-          <li><a><i class="fa-solid fa-cart-shopping"></i><span id="cart-text">Cart</span></a></li>
-        </ul>
+        <div class="nav-links">
+          <ul>
+            <li><a class="active">Home</a></li>
+            <li><a>Products</a></li>
+            <li><a>Login</a></li>
+            <li><a><i class="fa-solid fa-cart-shopping"></i><span id="cart-text">Cart</span></a></li>
+          </ul>
+        </div>        
+        
       </div>
     </nav>
+    
 
-    <main>
+     <main>
+      <section class="content">
+
       <section class="hero">
         
-        <div class="description">
-          <h1>Spring Time Sale!</h1>
-          <h2>40% Off Designated Designs</h2>
-          <button>Check out now</button>
-        </div>
+      <div class="description">
+        <h1>Spring Time Sale!</h1>
+        <h2>40% Off Designated Designs</h2>
+        <button>Check out now</button>
+      </div>
 
-        <div class="images">
-          <img src="img/products/shirts/midnight_green_tee.png" alt="Midnight Green Tee" class="midgreen">
-          <img src="img/products/shirts/brown_tee.png" alt="Brown Tee" class="brown">
-        </div>
+      <div class="images">
+        <img src="img/products/shirts/midnight_green_tee.png" alt="Midnight Green Tee" class="midgreen">
+        <img src="img/products/shirts/brown_tee.png" alt="Brown Tee" class="brown">
+      </div>
 
-      </section>
-    </main>
+    </section>
+
+    </section>
+    </main> 
+      
 
 
     <script src="index.js"></script>
