@@ -69,10 +69,6 @@ main {
     color: black;
 }
 
-#hamburger-x {
-  display: none;
-}
-
 @media (max-width: 1024px) {
     .hero {
       flex-direction: column;

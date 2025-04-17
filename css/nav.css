@@ -39,6 +39,43 @@ nav .navbar-content {
     width: 100%;
     padding: 0 20px;
   }
+
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+nav ul a {
+   padding: 15px 20px;
+   /* border-radius: 5px 5px 0 0; */
+    cursor: pointer;
+    transition: 0.2s ease-in;
+    border-radius: 5px;
+}
+
+nav ul a:hover {
+    background-color: white;
+    color: black;
+}
+
+  /* Mobile Navigation Menu */
+  .nav-links {
+    display: flex;
+  }
+
+  .nav-links #cartItem {
+    display: flex;
+    align-items: center;
+  }
+
 #logo h2 {
     font-size: 28px;
     font-weight: 700;
@@ -51,8 +88,8 @@ nav .navbar-content {
 }
 
 #search-bar {
-    flex: 1;
-    max-width: 600px; /* optional cap */
+    flex-grow: 1;
+    max-width: 600px;
     height: 5vh;
     display: inline-flex;
 }
@@ -89,32 +126,6 @@ nav .navbar-content {
     color: black;
 }
 
-nav ul {
-    list-style-type: none;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    text-align: center;
-    gap: 25px;
-    margin: 0;
-    padding: 0;
-    font-size: 16px;
-    font-weight: 500;
-}
-
-nav ul a {
-   padding: 15px 20px;
-   /* border-radius: 5px 5px 0 0; */
-    cursor: pointer;
-    transition: 0.2s ease-in;
-    border-radius: 5px;
-}
-
-nav ul a:hover {
-    background-color: white;
-    color: black;
-}
-
 .active {
     background-color: var(--main-color);
 }
@@ -136,12 +147,10 @@ nav ul a:hover {
     top: 20px;
     right: 20px;
   }
-  
-  /* Mobile Navigation Menu */
-  .nav-links {
-    display: flex;
-  }
-  
+
+  #hamburger-x {
+    display: none;
+  }  
   
   @media (max-width: 1024px) {
     
