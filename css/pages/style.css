@@ -25,7 +25,6 @@ main {
 
 }
 
-
 .hero .images {
     display: flex;
     margin-right: 50px;
@@ -68,6 +67,10 @@ main {
 .description button:hover {
     background-color: var(--accent-color);
     color: black;
+}
+
+#hamburger-x {
+  display: none;
 }
 
 @media (max-width: 1024px) {
