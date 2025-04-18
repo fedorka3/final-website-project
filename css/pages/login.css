@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+html {
+    font-family: "Open Sans", sans-serif;
+}
+
+:root {
+    --main-color: rgb(73, 0, 209);
+    --main-hover: rgb(64, 0, 182);
+    --accent-color: rgb(255, 187, 0);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

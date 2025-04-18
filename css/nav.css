@@ -12,7 +12,6 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: rgb(255, 255, 255);
 }
 
 nav {
@@ -59,6 +58,8 @@ nav ul a {
     cursor: pointer;
     transition: 0.2s ease-in;
     border-radius: 5px;
+    color: white;
+    text-decoration: none;
 }
 
 nav ul a:hover {
@@ -76,14 +77,16 @@ nav ul a:hover {
     align-items: center;
   }
 
-#logo h2 {
+#logo a {
     font-size: 28px;
     font-weight: 700;
     cursor: pointer;
     transition: 0.2s ease-in;
+    color: white;
+    text-decoration: none;
 }
 
-#logo h2:hover {
+#logo a:hover {
     color: var(--accent-color);
 }
 
@@ -130,7 +133,7 @@ nav ul a:hover {
     background-color: var(--main-color);
 }
 
-#cart-text {
+nav span {
   margin-left: 10px;
 }
 

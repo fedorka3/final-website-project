@@ -1,20 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
+body {
+  background-color: rgb(240, 240, 240);
+}
+
+/* Global stuff */
 main {
   width: 100%;
   height: 90vh;
-  background-color: white;
   display: flex;
   justify-content: center;
 
 }
 
-.content {
-  width: 80%;
+.onsale {
+  color: red;
 }
 
+/* Content */
+.content {
+  width: 75%;
+  
+}
+
+/* Hero section */
 .hero {
-  background-image: linear-gradient(to bottom right, rgb(240, 240, 240),  white); 
+  background-image: linear-gradient(to bottom right, rgb(209, 246, 255),  white); 
   /* background-color: rgb(238, 238, 238); */
   width: 100%;
   height: 22rem;
@@ -42,8 +53,8 @@ main {
 
 
 .description h1 {
-    font-size: 30px;
     color: rgb(0, 0, 0);
+    font-size: 30px;
 
 }
 
@@ -52,13 +63,28 @@ main {
     font-size: 32px;
 }
 
+.description h3 {
+  color: rgb(0, 0, 0);
+  font-size: 24px;
+}
+
+.description .line {
+background-color: rgb(0, 0, 0);
+width: 500px;
+height: 4px;
+}
+
+.time-to-remain {
+  color: red;
+}
+
 .description button {
     padding: 15px 20px;
     font-size: 15px;
     font-weight: 600;
     border: none;
     border-radius: 50px;
-    background-color: var(--main-color);
+    background-color: rgb(0, 0, 0);
     color: white;
     cursor: pointer;
     transition: 0.3s ease;
@@ -70,6 +96,10 @@ main {
 }
 
 @media (max-width: 1024px) {
+  .description .line {
+    display: none;
+  }
+  
     .hero {
       flex-direction: column;
       text-align: center;
@@ -107,6 +137,7 @@ main {
   
   
   @media (max-width: 600px) {
+
     .hero .images img {
       width: 140px;
     }
@@ -136,3 +167,44 @@ main {
     text-align: center;
   }
 }
+
+/* 1) Base sizing & centering */
+.content {
+  width: 75%;
+  /* you already have main { display:flex; justify-content:center } so .content is centered */
+}
+
+/* 2) The grid itself */
+.image-grid {
+  width: 100%;
+  margin: 2rem 0;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 30px;
+  
+}
+
+/* 3) Make images fill their cells */
+.image-grid .grid-item img {
+  width: 100%;
+  height: 100%;
+  object-fit:contain;
+  display: block;
+  background-color: white;
+}
+
+/* 4) Explicit placement to match your grey‑box mockup */
+.image-grid .item1 { 
+  grid-column: 1; grid-row: 1; 
+} 
+
+.image-grid .item2 { 
+  grid-column: 2; grid-row: 1; 
+} 
+
+
+.image-grid .item3 { 
+  grid-column: 3; grid-row: 1; 
+} 
+
