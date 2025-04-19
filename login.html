@@ -20,6 +20,7 @@
       </button>
 
       <div class="navbar-content">
+        
         <div id="logo">
           <a href="index.html">Pinnacle.</a>
         </div>
@@ -42,13 +43,40 @@
         
       </div>
     </nav>
-    
 
+     <!-- Login page -->
      <main>
-      <!-- Content -->
-      <section class="content">
-       
-    </main> 
+      <!-- Container -->
+        <div class="container">
+          <!-- Function that allows the form to be submitted with the user getting led to the index.html page, taking even tas the parameter -->
+          <form id="signup">
+            <h1>Create an Account</h1>
+            <div class="user-input">
+              <h2>Email Address</h2>
+              <!-- required means the user has to fill it out -->
+              <input type="email" id="email" placeholder="you@example.com" required>
+            </div>
+
+            <div class="user-input">
+              <h2>Username</h2>
+              <!-- required means the user has to fill it out -->
+              <input type="text" id="username" placeholder="Create a username" required>
+            </div>
+            
+            <div class="user-input">
+              <h2>Password</h2>
+              <!-- minlength makes it so the entered text has to be a minimum of 8 characters -->
+              <input type="password" id="password" placeholder="Enter at least 8 characters" minlength="8" required>
+              <!-- password type hides the characters as dots -->
+            </div>
+            
+              <!-- submit type allows the form to be submitted -->
+            <button id="signupBtn" type="submit">Create Account</button>
+            
+          </form>
+        </div>
+      
+      </main>
       
   </body>
 </html>
